@@ -52,7 +52,7 @@ func (p EthBalancePlugin) GraphDefinition() map[string]mp.Graphs {
 	}
 	return map[string]mp.Graphs{
 		"balance": {
-			Label:   "Ether",
+			Label:   p.MetricKeyPrefix(),
 			Unit:    "float",
 			Metrics: metrics,
 		},
